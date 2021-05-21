@@ -189,10 +189,10 @@ SECTIONS
     PROVIDE_HIDDEN (__rti_fn_end = .);
     /* for RT-Thread FinSH function register */
     PROVIDE_HIDDEN (__fsymtab_start = .);
-    KEEP (*(.FSymTab*))
+    KEEP (*(FSymTab*))
     PROVIDE_HIDDEN (__fsymtab_end = .);
     PROVIDE_HIDDEN (__vsymtab_start = .);
-    KEEP (*(.VSymTab*))
+    KEEP (*(VSymTab*))
     PROVIDE_HIDDEN (__vsymtab_end = .);
     /* added end */
     *(.glue_7)               /* glue arm to thumb code */
